@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My E-Resume Website</title>
+<link rel="stylesheet" href="edu.css">
+<link rel="stylesheet" href="style.css">
+<head>
+  <style>
+
+  .sidebar {
+    margin: 0;
+    padding: 0;
+    width: 100px;
+    background-color: lightpink;
+    height: 1100px;
+    position: absolute;
+    overflow: hidden;
+   }
+
+   .sidebar a {
+    display: block;
+    color: black;
+    padding: 3px;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    padding-block: 40px;
+    text-decoration: none;
+    height: 50x;
+   }
+  
+   .sidebar a.active {
+    background-color: palevioletred;
+    color: white;
+   }
+ 
+   .sidebar a:hover:not(.active) {
+    background-color: lightpink;
+    color: white;
+   }
+
+   div.content {
+    margin-left: 200px;
+    padding: 1px 16px;
+    
+   }
+
+   @media screen and (max-width: 700px) {
+    .sidebar {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+    .sidebar a {float: left;}
+    div.content {margin-left: 0;}
+   }
+
+   @media screen and (max-width: 400px) {
+    .sidebar a {
+      text-align: center;
+      float: none;
+    }
+   }
+
+   .box {
+    height: 300px;
+    width: 600px;
+    background-color: white;
+    border-radius: 20%;
+   }
+  </style>
+    
+ <nav class="navbar">
+ <ul>
+    <li style="float: left;"><a href="personal.html"><img class="navbar img" src="picture/logoo.png" alt=""></a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="album.html">Album</a></li>
+    <li><a href="experience.html">Experience</a></li>
+    <li><a href="skill.html">Skill</a></li>
+    <li><a href="primary.html">Education</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="index.html">Home</a></li>
+ </ul>
+ </nav>
+ </head>
+
+ <body>
+
+
+ <!-----------------SIDEBAR--------------------->
+
+  <div class="sidebar">
+  <a href="primary.html">Primary School</a>
+  <a href="secondary.html">Secondary School</a>
+  <a class="active" href="matriculation.html">Matriculation</a>
+  <a href="degree.html">Degree</a>
+ </div>
+
+ <!-----------------MATRICULATION--------------------->
+
+       <div style="padding-left: 210px; gap: 100px;display: flex;">        
+         <div>
+           <div class="keycontainer"  style="margin-top: 100px;margin-left: 40px;" >
+             <img style=" width: 250px; border-radius: 40%;" src="picture/kml.png" alt="KML">
+               </div>
+                   
+ <!-----------------BUTTON--------------------->
+ 
+               <button style="bottom:200px;height: 30px;margin-left: 45px;" class="open-button keycontainer" onclick="openResult('matricsResult')">Result</button>
+             <div class="result-popup" id="matricsResult">
+               <img style="width: 350px;" src="picture/resultmatric.png" alt="Matrics Result">
+                 <button type="button" class="btn cancel" onclick="closeForm('matricsResult')">Close</button>
+                   </div>
+                     </div>
+
+ <!-----------------DESCRIPTION--------------------->
+
+                     <div class="box keycontainer" style="text-align: center;margin-top: 100px;">
+                       <div style="margin-right: 10px;">
+                         <h3 style="color: palevioletred; text-shadow: 1px 1px 2px grey; text-align: center;">LABUAN MATRCULATION COLLEGE</h3>
+                           <p style="text-align: justify;color: black;font-size: 15px;width: 500px;"> After completing SPM, I decided to pursue my studies through the matriculation programme. Alhamdulillah, I was accepted into Labuan Matriculation College under Module 1 in the two-semester system. During my time there, I gained valuable knowledge as I was exposed to various practical experiences, such as preparing professional resumes, ethics in interview sessions, and foster innovative thinking.
+
+                          In addition, the numerous laboratory experiments strengthened my attention to detail and analytical skills. These experiences helped me become a more precise, disciplined, and responsible individual. As a result, I have developed the habit of completing every task with dedication and throughness to achieve high-quality outcomes. </p>
+                       </div>
+                   </div>
+               </div>
+           </div>
+
+ <!-----------------ROW 2--------------------->
+
+  <div style="padding-left: 78px; gap: 20px; display: flex;">
+         <div class="keycontainer"  style="margin-top: -120px;margin-left: 40px;" >
+           <img style=" width: 410px;border-radius: 40%;" src="picture/ratlab.jpg" alt="KML">
+         </div>
+
+         <div class="keycontainer"  style="margin-top: -120px;margin-left: 40px;" >
+           <video style="width: 560px;" src="video/chem.mp4" autoplay muted loop></video>
+         </div>
+
+         <div class="keycontainer"  style="margin-top: -120px;margin-left: 40px;" >
+           <video style="width: 400px;" src="video/debate.mp4" autoplay muted loop></video>
+         </div>
+
+         <div class="keycontainer"  style="margin-top: -120px;margin-left: 40px;" >
+           <img style=" width: 410px;margin-left: 100px;" src="picture/meowchine.jpg" alt="KML">
+         </div>
+  </div>
+
+ <!-----------------ROW 2 ( DESCRIPTION )--------------------->
+    
+    <div style="display: flex;gap: 220px;text-align: center;margin-left: 210px; text-shadow:0px 1px 2px grey;font-size: 18px;font-weight: bold;color: palevioletred;">
+        <div>
+            <p style="margin-left: 10px;"> Bio Lab</p>
+        </div>
+        <div style="margin-left: 100px;">
+            <p >Chemist Lab </p>
+        </div>
+        <div style="margin-left: -20px;">
+            <p style="width: 200px;">Pengajian Am class; Debate activity.</p>
+        </div>
+        <div style="margin-left: -100px;">
+            <p style="width: 250px;">English project. Presentation regarding the model "Meowchine"</p>
+        </div>
+    </div>
+
+
+
+ <!-----------------FOOTER--------------------->
+
+    <div class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Follow Me</h3>
+                <div class="footer-social">
+                    <a href="https://www.tiktok.com/@lvv.fy" target="_blank" title="TikTok">TikTok</a>
+                    <a href="https://www.instagram.com/ppoyy.ch/" target="_blank" title="Instagram">Instagram</a>
+                    <a href="https://wa.me/qr/MLHSSZ2KC2OSH1" target="_blank" title="WhatsApp">WhatsApp</a>
+                    <a href="https://www.linkedin.com/in/fify-natasya-4013a9397?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" title="LinkedIn">LinkedIn</a>   
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p><a href="mailto:your-email@example.com">qiwiiss06@gmail.com</a></p>
+                <p><a href="tel:01125466456">011-2546 6456</a></p>
+            </div>
+
+            <div class="footer-section">
+                <h3>About</h3>
+                <p>E-resume website showcasing my education, skills & experiences.</p>
+            
+                <div  style="background-color: lightpink;font-weight: bold;font-size: 18px;">
+            <p>&copy; 2024 Fify Natasya</p>
+        </div>
+        </div>
+
+
+<script src="js/education.js"></script>
+
+</body>
+</html>

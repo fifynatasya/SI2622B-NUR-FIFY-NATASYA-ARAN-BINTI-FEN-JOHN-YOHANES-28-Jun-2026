@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>My E-Resume Website</title>
+ <link rel="stylesheet" href="edu.css">
+ <link rel="stylesheet" href="style.css">
+ <head>
+ <style>
+
+ .sidebar {
+ margin: 0;
+ padding: 0;
+ width: 100px;
+ background-color: lightpink;
+ height: 1100px;
+ position: absolute;
+ overflow: hidden;
+ }
+
+ .sidebar a {
+ display: block;
+ color: black;
+ padding: 3px;
+ text-align: left;
+ font-family: Arial, Helvetica, sans-serif;
+ font-weight: bold;
+ font-size: 15px;
+ padding-block: 40px;
+ text-decoration: none;
+ height: 50x;
+ }
+  
+ .sidebar a.active {
+ background-color: palevioletred;
+ color: white;
+ }
+ 
+ .sidebar a:hover:not(.active) {
+ background-color: lightpink;
+ color: white;
+ }
+
+ div.content {
+ margin-left: 200px;
+ padding: 1px 16px;    
+ }
+
+ @media screen and (max-width: 700px) {
+ .sidebar {
+ width: 100%;
+ height: auto;
+ position: relative;
+ }
+ .sidebar a {float: left;}
+ div.content {margin-left: 0;}
+ }
+
+ @media screen and (max-width: 400px) {
+ .sidebar a {
+ text-align: center;
+ float: none;
+ }
+ }
+
+ .box {
+ height: 300px;
+ width: 600px;
+ background-color: white;
+ border-radius: 20%;
+ }
+ </style>
+    
+
+ <!-----------------NAVIGATION BAR--------------------->
+
+ <nav class="navbar">
+ <ul>
+    <li style="float: left;"><a href="personal.html"><img class="navbar img" src="picture/logoo.png" alt=""></a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="album.html">Album</a></li>
+    <li><a href="experience.html">Experience</a></li>
+    <li><a href="skill.html">Skill</a></li>
+    <li><a href="primary.html">Education</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="index.html">Home</a></li>
+ </ul>
+ </nav>
+ 
+ </head>
+
+ <body>
+
+
+  <!-----------------SIDEBAR--------------------->
+
+  <div class="sidebar">
+  <a href="primary.html">Primary School</a>
+  <a href="secondary.html">Secondary School</a>
+  <a href="matriculation.html">Matriculation</a>
+  <a class="active" href="degree.html">Degree</a>
+ </div>
+
+ <!-----------------SECONDARY SCHOOL--------------------->
+
+       <div style="padding-left: 210px; gap: 100px;display: flex;">        
+         <div>
+           <div class="keycontainer"  style="margin-top: 100px;margin-left: 40px;" >
+             <img style=" width: 3000px;height: 250px; border-radius: 40%;" src="picture/uitm.png" alt="UiTM">
+               </div>
+
+ <!-----------------BUTTON-------------------->  
+
+           <button style="bottom:200px;height: 30px;margin-left: 45px;" class="open-button keycontainer" onclick="openResult('sem1Result')">Result</button>
+             <div class="result-popup" id="sem1Result">
+               <img style="width: 350px;" src="picture/resultuitm.png" alt="Sem1 Result">
+                 <button type="button" class="btn cancel" onclick="closeForm('sem1Result')">Close</button>
+                   </div>
+                     </div>
+
+ <!-----------------DESCRIPTION--------------------->
+
+                     <div class="box keycontainer" style="text-align: center;margin-top: 100px;">
+                       <div style="margin-right: 10px;">
+                         <h3 style="color: palevioletred; text-shadow: 1px 1px 2px grey; text-align: center;">UiTM KAMPUS PUNCAK PERDANA</h3>
+                           <p style="text-align: justify;color: black;font-size: 15px;width: 500px;"> After completing my matriculation studies, I continued my academic journey at UiTM Puncak Perdana in the Information Systems Management programme. When I first received my UPU results, I felt nervous because my previous background was not related to technology. However, through determination and continuous effort, I managed to adapt well to the course. Now, in my second semester, I have become more confident in coding and programming. The skills I have learned have enabled me to develop projects independently, including the creation of this website. This achievement reflects my ability to learn quickly and adapt to new challenges.</p>
+                       </div>
+                   </div>
+               </div>
+           </div>
+
+ <!-----------------ROW 2--------------------->
+
+  <div style="padding-left: 78px; gap: 20px; display: flex;">
+         <div class="keycontainer"  style="margin-top: -120px;margin-left: 40px;" >
+           <img style=" width: 430px;border-radius: 40%;" src="picture/borneomuseum.jpg" alt="degree">
+         </div>
+
+         <div class="keycontainer"  style="margin-top: -120px;margin-left: 40px;" >
+           <img style=" width: 300px;" src="picture/lightfury.jpg" alt="degree">
+         </div>
+
+         <div class="keycontainer"  style="margin-top: -120px;margin-left: 40px;" >
+           <video style="width: 550px;margin-left: 50px;" src="video/kesat.mp4" autoplay loop muted></video>
+         </div>
+
+         <div class="keycontainer"  style="margin-top: -120px;margin-left: 40px;" >
+           <video src="video/presentimc451.mp4" autoplay loop muted></video>
+         </div>
+  </div>
+
+ <!-----------------ROW 2 ( DESCRIPTION )--------------------->
+    
+    <div style="display: flex;gap: 220px;text-align: center;margin-left: 210px; text-shadow:0px 1px 2px grey;font-size: 18px;font-weight: bold;color: palevioletred;">
+        <div>
+            <p style="margin-left: -100px;width: 250px;">visit at Art Hour Gallery Museum of Ethnic Arts</p>
+        </div>
+        <div style="margin-left: -100px;">
+            <p style="width: 300px ;"> Light Fury team at Kursus Pengurusan Organisasi  </p>
+        </div>
+        <div>
+            <p style="width: 180px;margin-left: -90px;">Team leader during Kesatria</p>
+        </div>
+        <div style="margin-left: -60px;margin-right: 100px;">
+            <p style="width: 250px;">IMC451 Presentation</p>
+        </div>
+    </div>
+
+
+
+ <!-----------------FOOTER--------------------->
+
+    <div class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Follow Me</h3>
+                <div class="footer-social">
+                    <a href="https://www.tiktok.com/@lvv.fy" target="_blank" title="TikTok">TikTok</a>
+                    <a href="https://www.instagram.com/ppoyy.ch/" target="_blank" title="Instagram">Instagram</a>
+                    <a href="https://wa.me/qr/MLHSSZ2KC2OSH1" target="_blank" title="WhatsApp">WhatsApp</a>
+                    <a href="https://www.linkedin.com/in/fify-natasya-4013a9397?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" title="LinkedIn">LinkedIn</a>   
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p><a href="mailto:your-email@example.com">qiwiiss06@gmail.com</a></p>
+                <p><a href="tel:01125466456">011-2546 6456</a></p>
+            </div>
+
+            <div class="footer-section">
+                <h3>About</h3>
+                <p>E-resume website showcasing my education, skills & experiences.</p>
+            
+                <div  style="background-color: lightpink;font-weight: bold;font-size: 18px;">
+            <p>&copy; 2024 Fify Natasya</p>
+        </div>
+        </div>
+
+<script src="js/education.js"></script>
+
+</body>
+</html>

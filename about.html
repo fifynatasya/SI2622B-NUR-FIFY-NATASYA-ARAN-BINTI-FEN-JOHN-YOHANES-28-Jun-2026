@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My E-Resume Website</title>
+
+   <link rel="stylesheet" href="style.css">
+
+    <style>
+
+
+ 
+ /*TABLE*/
+
+ table, td, th {
+ border: 3px solid;
+ padding: 7px;
+ border-color:pink;
+ border-radius: 5%;
+ margin: 40px;
+ }
+
+ table {
+ border-collapse: collapse;
+ background-color: ivory;
+ font-weight: bolder;
+ font-size: 20px;
+ color:palevioletred;
+ font-family: Arial, Helvetica, sans-serif;
+ }
+
+ /* ── BIODATA ── */
+ .facts-grid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 16px;
+ }
+
+ .fact-item {
+
+  background:lightpink;  
+  border-radius: 14px;
+  padding: 20px;
+  border: white;
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  transition: transform 0.50s ease, border 0.4s ease;
+ }
+
+ .fact-item:hover {
+  transform: translateY(-10px);
+  border: 1px solid white;
+ }
+
+
+ .fact-item p {
+  font-size: 13px;
+  line-height: 1.7;
+  color: black;
+ }
+
+ .fact-item strong {
+  color: black;
+  display: block;
+  margin-bottom: 4px;
+ }
+
+
+ .box {
+ display: flex;
+ height: 430px;
+ width: 820px;
+ background-color: lightpink;
+ border-radius: 24px;
+ display: flex;
+ }
+
+ /*GLOW*/
+ .glow {
+  font-size: 80px;
+  color: #fff;
+  text-align: center;
+  animation: glow 1s ease-in-out infinite alternate;
+ }
+
+  @keyframes glow {
+  from {
+    text-shadow:  0 0 10px palevioletred, 0 0 10px palevioletred, 0 0 50px palevioletred;
+  } 
+  to {
+    text-shadow: 0 0 10px hotpink, 0 0 10px hotpink 20px 40px hotpink, 0 20px 60px hotpink ;
+ }
+ }
+ 
+ 
+ @-webkit-keyframes glow {
+  from {
+    text-shadow:  0 0 10px palevioletred, 0 0 10px palevioletred, 0 0 50px palevioletred;
+  } 
+  to {
+    text-shadow: 0 0 10px hotpink, 0 0 10px hotpink 0 20px 80px hotpink, 0 20px 80px hotpink ;
+ }
+ }
+
+ </style>
+
+  
+ <!-----------------NAVIGATION BAR--------------------->
+
+ <nav class="navbar">
+ <ul>
+    <li style="float: left;"><a href="personal.html"><img class="navbar img" src="picture/logoo.png" alt=""></a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="album.html">Album</a></li>
+    <li><a href="experience.html">Experience</a></li>
+    <li><a href="skill.html">Skill</a></li>
+    <li><a href="primary.html">Education</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="index.html">Home</a></li>
+ </ul>
+ </nav>
+    
+ </head>
+ <body>
+
+
+ <br><br>
+
+ <!-----------------PROFILE--------------------->
+
+ <h1 class="keycontainer" style="text-align: center; ">Profile</h1>
+
+ <br>
+
+     <div class="box fact-item" style="background-color: lightpink; height: 300px; width: 1160px;margin: 0 auto;gap: 100px;">
+        
+            <img  style="width: 200px; height: auto; margin-left: 80px;margin-bottom: 0%; border-radius: 200px;margin-top: 20px;" src="picture/fify.jpg" alt="">
+            <p style="font-size: 18px; width: 700px;text-align: justify;"><strong style="font-size: 35px; color: black;text-shadow: 1px 1px 3px pink;">HELLO !</strong><br>
+            Fify's here again! I'm currently studying at UiTM Puncak Perdana, degree in Information Science (Honour) Information System Management. <br>
+            Even without any background related to technology and programming, I still find my passion in this study. Meaning that, with any courses given, I always <br> <span class="glow" style="font-size: 25px;font-weight: bold; color: white  ;text-shadow: 1px 1px 2px grey;">strive to be the best!</span>
+            </p>
+     </div>
+ <br><br><br>
+
+ <!-----------------BIODATA--------------------->
+ <div style="display: flex; justify-content: center;gap: 20px;padding: 10px;">
+    <div class="fact-item" style="width: 200px;">
+        <p><strong>Full Name</strong>
+          NUR FIFY NATASYA ARAN BINTI FEN JOHN YOHANES <br><br>
+            <strong>AGE</strong>
+              20 YEARS OLD <br><br>
+                <strong>BORNED IN</strong>
+                  <img style="width:150px;" src="picture/lbn.png" alt=""></p>
+                    </div>
+
+                      <div class="fact-item">
+                        <img style="border-radius: 20%;" src="picture/calendar.png" alt="birthday">
+                        </div>
+
+                        <div class="fact-item">
+                    <p><strong style="text-align: centerzx;">PERSONAL STRENGTHS</strong><br>
+                    ADAPTABILITY - easy to adapt to a new environment <br><br> 
+                    TIME MANAGEMENT - good at manages time <br><br>
+                    COMMUNICATION - know how to communicate well and easy to talk to during discussion <br><br>
+                    TEAMWORK - able to work in a group of people without getting the mood down <br><br>
+                    PRECISE - give fully attention to detail and leave minimal mistakes
+                    </p>
+              </div>
+        </div>  
+
+     <br><br><br><br><br>
+
+
+     
+ <!-----------------VIDEO RESUME--------------------->
+
+     <h1 class="keycontainer fact-item" style="text-align: center; width: 215px;margin: 0 auto; ">Video Resume</h1> <br><br>
+
+     <div class="box" style="margin: 0 auto; justify-content: center;" >
+        <video style="width: 700px;margin-bottom: 10px;" src="video/resume.mp4" controls></video>
+     </div>
+    </div>
+    <br><br>
+
+
+
+
+ <!-----------------FOOTER--------------------->
+
+    <div class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Follow Me</h3>
+                <div class="footer-social">
+                    <a href="https://www.tiktok.com/@lvv.fy" target="_blank" title="TikTok">TikTok</a>
+                    <a href="https://www.instagram.com/ppoyy.ch/" target="_blank" title="Instagram">Instagram</a>
+                    <a href="https://wa.me/qr/MLHSSZ2KC2OSH1" target="_blank" title="WhatsApp">WhatsApp</a>
+                    <a href="https://www.linkedin.com/in/fify-natasya-4013a9397?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" title="LinkedIn">LinkedIn</a>   
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p><a href="mailto:your-email@example.com">qiwiiss06@gmail.com</a></p>
+                <p><a href="tel:01125466456">011-2546 6456</a></p>
+            </div>
+
+            <div class="footer-section">
+                <h3>About</h3>
+                <p>E-resume website showcasing my education, skills & experiences.</p>
+            
+                <div  style="background-color: lightpink;font-weight: bold;font-size: 18px;">
+            <p>&copy; 2024 Fify Natasya</p>
+        </div>
+        </div>
+
+    
+ 
+
+</body>
+</html>
