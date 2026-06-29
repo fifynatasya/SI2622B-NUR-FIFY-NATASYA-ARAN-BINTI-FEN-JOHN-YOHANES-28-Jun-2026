@@ -16,34 +16,6 @@
 
 
 
- /* Mobile responsiveness for footer */
- @media (max-width: 768px) {
- .footer {
- height: 200px;
- padding: 12px 15px;
- width: 100%;
- }
-
- .footer-content {
- grid-template-columns: 1fr;
- gap: 10px;
- }
-
- .footer-section h3 {
- font-size: 12px;
- margin-bottom: 4px;
- }
-
- .footer-section p,
- .footer-social a {
- font-size: 10px;
- }
-
- .footer-bottom p {
- font-size: 10px;
- }
- }
-
 
  /*This is Navigation Bar*/
 
@@ -192,6 +164,35 @@
 
  .footer-social a:hover {
  color: palevioletred;
+ }
+ 
+
+ /* Mobile responsiveness for footer */
+ @media (max-width: 768px) {
+ .footer {
+ height: 200px;
+ padding: 12px 15px;
+ width: 100%;
+ }
+
+ .footer-content {
+ grid-template-columns: 1fr;
+ gap: 10px;
+ }
+
+ .footer-section h3 {
+ font-size: 12px;
+ margin-bottom: 4px;
+ }
+
+ .footer-section p,
+ .footer-social a {
+ font-size: 10px;
+ }
+
+ .footer-bottom p {
+ font-size: 10px;
+ }
  }
 
 
